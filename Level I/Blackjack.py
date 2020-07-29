@@ -7,7 +7,7 @@ values = {'Two':2, 'Three':3, 'Four':4, 'Five':5, 'Six':6, 'Seven':7, 'Eight':8,
 
 playing = True
 
-class Card:
+class Card:    # Combines the "Suits" and "Ranks" Sets to get our Playing Deck
     
     def __init__(self,suit,rank):
         self.suit = suit
@@ -16,10 +16,10 @@ class Card:
     def __str__(self):
         return self.rank + ' of ' + self.suit
 
-class Deck:
+class Deck:         # Adding the above formed combinations to a "deck" list
     
     def __init__(self):
-        self.deck = []  # start with an empty list
+        self.deck = []  # Start with an empty list
         for suit in suits:
             for rank in ranks:
                 self.deck.append(Card(suit,rank))
@@ -40,9 +40,9 @@ class Deck:
 class Hand:
 	
     def __init__(self):
-        self.cards = []  # start with an empty list as we did in the Deck class
-        self.value = 0   # start with zero value
-        self.aces = 0 # add an attribute to keep track of aces
+        self.cards = []  # Start with an empty list as we did in the Deck class
+        self.value = 0   # Start with zero value
+        self.aces = 0 # Add an attribute to keep track of aces
 
     
     def add_card(self,card):
@@ -86,7 +86,7 @@ def hit(deck,hand):
     hand.adjust_for_ace()
 
 def hit_or_stand(deck,hand):
-    global playing  # to control an upcoming while loop
+    global playing  # To control an upcoming while loop
     while True:
         x = input("Would you like to Hit or Stand? Enter 'h' or 's' ")
         

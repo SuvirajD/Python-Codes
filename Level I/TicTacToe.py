@@ -6,7 +6,7 @@
 
 from IPython.display import clear_output
 
-def display_board(board):
+def display_board(board):           # Board Decoration and set up
     clear_output()
     print('TIC TAC TOE')
     print('-----------')
@@ -21,7 +21,7 @@ def display_board(board):
     print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3] )
     print('   |   | ')
  
-def player_input():
+def player_input():                 # Player chooses marker
     
     '''
     
@@ -37,7 +37,7 @@ def player_input():
         else:
             return ('O','X')
 
-def place_marker(board, marker, position):
+def place_marker(board, marker, position):      # Decide Marker position
     
     board[position] = marker
 
