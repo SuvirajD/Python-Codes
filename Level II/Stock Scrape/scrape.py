@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import time
 import csv
 import mail
-from datetime import date
+from datetime import date    			# The Stocks below can be taken from any website granting permission to scrape
 urls = ['https://finance.yahoo.com/quote/FCONSUMER.NS?p=FCONSUMER.NS&.tsrc=fin-srch','https://finance.yahoo.com/quote/BHARATFORG.NS?p=BHARATFORG.NS&.tsrc=fin-srch','https://finance.yahoo.com/quote/LEMONTREE.NS?p=LEMONTREE.NS&.tsrc=fin-srch',
 'https://finance.yahoo.com/quote/SUNDRMFAST.NS?p=SUNDRMFAST.NS&.tsrc=fin-srch','https://finance.yahoo.com/quote/CUMMINSIND-EQ.NS?p=CUMMINSIND-EQ.NS&.tsrc=fin-srch','https://finance.yahoo.com/quote/HINDUNILVR.NS?p=HINDUNILVR.NS&.tsrc=fin-srch',
 'https://finance.yahoo.com/quote/BAJFINANCE.NS?p=BAJFINANCE.NS&.tsrc=fin-srch','https://finance.yahoo.com/quote/MAHSCOOTER.NS?p=MAHSCOOTER.NS&.tsrc=fin-srch','https://finance.yahoo.com/quote/BANKBARODA.NS?p=BANKBARODA.NS&.tsrc=fin-srch', 
